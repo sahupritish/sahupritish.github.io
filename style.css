@@ -1,0 +1,131 @@
+
+ul.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Times New Roman";
+    font-size: 14px;
+    /*todo : change the width for all size*/
+    width: 1020px;
+}
+ul.menu a{
+    text-decoration: none;
+    outline: none;
+}
+ul.menu li{
+    float: left;
+    width: 170px;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+}
+ul.menu li > a{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 170px;
+    height: 85px;
+    z-index: 12;
+    background: transparent url("images/overlay.png") no-repeat bottom right;
+	-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;
+}
+ul.menu li a img{
+    border: none;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: 0px;
+    left: 85px;
+    z-index: 100;
+    -moz-box-shadow: 0px 0px 4px #000;
+    -webkit-box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px #000;
+}
+ul.menu li span.wrap{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 170px;
+    height: 60px;
+    z-index: 15;
+}
+ul.menu li span.active{
+    position: absolute;
+    background: #111;
+    top: 85px;
+    width: 170px;
+    height: 0px;
+    left: 0px;
+    z-index: 14;
+	-moz-box-shadow:0px 0px 4px #000 inset;
+	-webkit-box-shadow:0px 0px 4px #000 inset;
+	box-shadow:0px 0px 4px #000 inset;
+}
+ul.menu li span span.link,
+ul.menu li span span.desc,
+ul.menu li div.box a{
+    margin-left: 15px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+ul.menu li span span.link{
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    clear: both;
+}
+ul.menu li span span.desc{
+    color: #0B75AF;
+    float: left;
+    clear: both;
+    width: 155px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+ul.menu li div.box{
+    display: block;
+    position: absolute;
+    width:170px;
+    overflow: hidden;
+    height:170px;
+    top:85px;
+    left:0px;
+    display:none;
+    background:#000;
+}
+ul.menu li div.box a{
+    float: left;
+    clear:both;
+    line-height:30px;
+    color:#0B75AF;
+}
+ul.menu li div.box a:first-child{
+    margin-top: 15px;
+}
+ul.menu li div.box a:hover{
+    color:#fff;
+}
+.detail{
+    margin: 0px;
+    padding-top: 220px;
+    /*border-style: solid;*/
+    color: #999978;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:hover {background-color: lightsteelblue}
+/*tr:nth-child(even){background-color: #f2f2f2}*/
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
